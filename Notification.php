@@ -52,6 +52,12 @@ abstract class Notification extends \yii\base\BaseObject
      *
      * @return string
      */
+	
+	public function toEmail($channel)
+    {
+        return true;
+    }
+	
     abstract public function getTitle();
 
     /**
